@@ -129,7 +129,7 @@ input {
 
 /* Mobile 375px */
 
-@media (max-width: 375px) {
+@media (max-width: 425px) {
   .caixa {
     border: 1px solid var(--borda);
     background-color: var(--caixa);
@@ -139,3 +139,4 @@ input {
     margin: 1.5rem auto;
   }
 }
+
