@@ -1,0 +1,141 @@
+/* Tema claro/escuro */
+:root {
+  --bg: #ffffff;
+  --texto: #2c2c2b;
+  --borda: #eeedeb;
+  --caixa: #eeedeb68;
+  --acao: #2383e2;
+}
+
+[data-tema="escuro"] {
+  --bg: #202020;
+  --texto: #fff;
+  --borda: #ffffff16;
+  --caixa: #333333;
+  --acao: #2383e2;
+}
+
+/* Estilos - Todos os elementos */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg);
+  color: var(--texto);
+}
+
+.topo {
+  border-bottom: 1px solid var(--borda);
+}
+
+.topo .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+  font-weight: 100;
+}
+
+.caixa {
+  border: 1px solid var(--borda);
+  background-color: var(--caixa);
+  border-radius: 0.5rem;
+  padding: 4rem 4rem;
+  max-width: 45%;
+  margin: 1.5rem auto;
+}
+
+h1 {
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+p {
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+  font-weight: 100;
+  line-height: 1.5rem;
+}
+
+form {
+  display: grid;
+  gap: 1rem;
+}
+
+label {
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+input {
+  padding: 1rem 0.9rem;
+  border: 1px solid var(--borda);
+  border-radius: 0.5rem;
+  background-color: var(--bg);
+  color: var(--texto);
+}
+
+.btn {
+  padding: 0.9rem 0.9rem;
+  border: 1px solid var(--borda);
+  background-color: var(--bg);
+  color: var(--texto);
+  border-radius: 0.5rem;
+  cursor: pointer;
+
+  max-width: 250px;
+}
+
+.btn.primario {
+  margin-top: 0.5rem;
+  background-color: var(--acao);
+  color: #fff;
+}
+
+.rodape {
+  border-top: 1px solid var(--borda);
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #afafaf;
+  margin-top: auto;
+}
+
+/* Laptop 1100px */
+
+@media (max-width: 1100px) {
+  .caixa {
+    border: 1px solid var(--borda);
+    background-color: var(--caixa);
+    border-radius: 0.5rem;
+    padding: 4rem 4rem;
+    max-width: 60%;
+    margin: 1.5rem auto;
+  }
+}
+
+/* Mobile 375px */
+
+@media (max-width: 375px) {
+  .caixa {
+    border: 1px solid var(--borda);
+    background-color: var(--caixa);
+    border-radius: 0.5rem;
+    padding: 2rem 2rem;
+    max-width: 90%;
+    margin: 1.5rem auto;
+  }
+}
