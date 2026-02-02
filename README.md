@@ -30,7 +30,7 @@ O layout foi adaptado para diferentes dispositivos utilizando Media Queries:
 
 ## Preview
 
-🔗 Live Demo: https://SEU-USUARIO.github.io/newsletter-theme-toggle/
+🔗 https://mardoqueugmartins.github.io/NewletterToggle/
 
 ## Aprendizados
 
